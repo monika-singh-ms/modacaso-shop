@@ -33,15 +33,17 @@
     "slug": {
       "type": "uid"
     },
-    "subcategories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category"
-    },
-    "parentcategory": {
+    "parentCategory": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::category.category"
+      "target": "api::category.category",
+      "mappedBy": "subcategory"
+    },
+    "subcategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category",
+      "mappedBy": "parentCategory"
     }
   }
 }

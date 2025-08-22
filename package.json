@@ -15,19 +15,16 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@strapi/admin": "5.18.1",
+    "@strapi/plugin-cloud": "5.18.1",
     "@strapi/plugin-users-permissions": "5.18.1",
-    "@strapi/provider-upload-cloudinary": "^5.20.0",
     "@strapi/strapi": "5.18.1",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0" 
+    "styled-components": "^6.0.0"
   },
-  "devDependencies": {
-    "typescript": "^5.4.4"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
